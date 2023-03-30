@@ -26,22 +26,24 @@ public class FlujoCompraStepDefinitions extends Configuracion {
 
 
     @Given("el usuario esta en la pagina principal")
-    public void elUsuarioEstaEnLaPaginaPrincipal() {
+    public void elUsuarioEstaEnLaPaginaPrincipal() throws InterruptedException {
         configurarNavegador();
         theActorInTheSpotlight().wasAbleTo(
                 new AbrirPaginaInicial()
 
         );
+
     }
 
     @When("navega hasta la opcion de incio de sesion")
-    public void navegaHastaLaOpcionDeIncioDeSesion() {
+    public void navegaHastaLaOpcionDeIncioDeSesion() throws InterruptedException {
         theActorInTheSpotlight().attemptsTo(
                 navegarAlInicioSesion()
                         .conElUsuario(credenciales.get(0))
                         .yConLaContrasenna(credenciales.get(1))
 
         );
+
     }
 
     @When("selecciona el producto")

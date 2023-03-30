@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="2a974fa2b1aaca58a49c8eadabee2c6d803692fda73393aa30fe0381652dc689.html">Comprar Producto</a></span>
+                > <span class="truncate-60"><a
+                    href="f41f65bf52443261ba852037b1d70ac70709a0eb0eadd521f7074e3ae5b3deff.html">Compra de productos </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2023 16:52</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Comprar Producto </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                yo como usuario de falabella<br />
+quiero dirigirme a la seccion de productos<br />
+para poder comprar un producto
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Compra de productos
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Given el usuario esta en la pagina principal" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Yolima abrir pagina inicial" width="1366"/>
+                <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Yolima opens the Pagina inicial" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Yolima opens the Pagina inicial (completed)" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Yolima abrir pagina inicial (completed)" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Given el usuario esta en la pagina principal (completed)" width="1366"/>
+                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" When navega hasta la opcion de incio de sesion" width="1366"/>
+                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Yolima navegar al inicio sesion" width="1366"/>
+                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Yolima clicks on Boton ir al registro" width="1366"/>
+                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Yolima enters 'ayolima05@gmail.com' into input email" width="1366"/>
+                <img src="08c7da7c7552d3289ce4435794d032e2a5a8c6cbfbfd4c29db1ddff8995dcc37.png" title=" Yolima enters 'ayolima05@gmail.com' into input email (completed)" width="1366"/>
+                <img src="08c7da7c7552d3289ce4435794d032e2a5a8c6cbfbfd4c29db1ddff8995dcc37.png" title=" Yolima enters 'Contrasenia2045' into input email" width="1366"/>
+                <img src="ba54dcaf282bc2fe6e7d344f36b066924ef5b7b3673e4395a3dccb8ac2c85ea5.png" title=" Yolima enters 'Contrasenia2045' into input email (completed)" width="1366"/>
+                <img src="ba54dcaf282bc2fe6e7d344f36b066924ef5b7b3673e4395a3dccb8ac2c85ea5.png" title=" Yolima clicks on input email" width="1366"/>
+                <img src="2d9583e582b17d31d05e1be87aa2ac5d806ea2ff0df87eaf6e44d146f7402185.png" title=" Yolima clicks on input email (completed)" width="1366"/>
+                <img src="2d9583e582b17d31d05e1be87aa2ac5d806ea2ff0df87eaf6e44d146f7402185.png" title=" Yolima navegar al inicio sesion (completed)" width="1366"/>
+                <img src="2d9583e582b17d31d05e1be87aa2ac5d806ea2ff0df87eaf6e44d146f7402185.png" title=" When navega hasta la opcion de incio de sesion (completed)" width="1366"/>
+                <img src="7a7c73addc96f687af6abdba813ba696493fe6cff20ac93865294d60708d5d49.png" title=" And selecciona el producto" width="1366"/>
+                <img src="7a7c73addc96f687af6abdba813ba696493fe6cff20ac93865294d60708d5d49.png" title=" Yolima selecciona producto" width="1366"/>
+                <img src="d68f1a0e293bb672e95d257679a34c8dd0f5c53b3d014d1b13ea469689de0176.png" title=" Yolima enters 'cuchara' into Categorias" width="1366"/>
+                <img src="b19a87b5f61b4f7feed4dddc6b55fc708e21a43433b46ef5c2c260a0628bb199.png" title=" Yolima enters 'cuchara' into Categorias (completed)" width="1366"/>
+                <img src="b19a87b5f61b4f7feed4dddc6b55fc708e21a43433b46ef5c2c260a0628bb199.png" title=" Yolima clicks on Categoria decohogar" width="1366"/>
+                <img src="bd54968a8659b1a05adcbbc5ca54e679ef2512a875cef4454b33ca974eaa5465.png" title=" Yolima clicks on Categoria decohogar (completed)" width="1366"/>
+                <img src="bd54968a8659b1a05adcbbc5ca54e679ef2512a875cef4454b33ca974eaa5465.png" title=" Yolima clicks on menu menor precio" width="1366"/>
+                <img src="c2c440ec45d8fc22e1dd4d899c43f574061eb561afb1bc3adb36312c8ddda824.png" title=" Yolima clicks on menu menor precio (completed)" width="1366"/>
+                <img src="c2c440ec45d8fc22e1dd4d899c43f574061eb561afb1bc3adb36312c8ddda824.png" title=" Yolima clicks on opcion menor precio" width="1366"/>
+                <img src="a8e944f295d730373dee9d8e2c82cef797f8148d1c9c338474a47f3c440761d7.png" title=" Yolima clicks on opcion menor precio (completed)" width="1366"/>
+                <img src="a8e944f295d730373dee9d8e2c82cef797f8148d1c9c338474a47f3c440761d7.png" title=" Yolima clicks on producto" width="1366"/>
+                <img src="6730836d2277765f02ab78a6b725ac6c26a818fe7f464a7beeeec7444299de8d.png" title=" Yolima clicks on producto (completed)" width="1366"/>
+                <img src="6730836d2277765f02ab78a6b725ac6c26a818fe7f464a7beeeec7444299de8d.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="3c8972d84de3116366029ca53e6814ca6afc6e1f503a6975074ec79a539a2f3f.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="c131837a11909df00cb322037753ef8f4ec786c4ab8a5c9d2ab2404be4da9ad4.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="d41d8c6fbde54cc8b442afcfa02520b194423768c84ed6adfc3d55970cbb8057.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="d41d8c6fbde54cc8b442afcfa02520b194423768c84ed6adfc3d55970cbb8057.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="bd05cc64eabfee7202825c0bc6b59655bb00bba6a5ec0fd739da9ddf2d288c6a.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="1ace48ca959caa3f2deec7a25c438ba7d1c129aac02439370dc0cd49fc9bdf4d.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="732df9edff18d9370d73e759ff8deae3de48cf7468dc5ff85823ef413fcac6bf.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="a206dc5694b698650fbcbb3b070b84f4a41874ff0d38c580db6f5ec77e192b07.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="72e63cba3ec57ef93c3c1d0c47ad75091f5da86f87e7f59c7af07be1ba953f83.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="72e63cba3ec57ef93c3c1d0c47ad75091f5da86f87e7f59c7af07be1ba953f83.png" title=" Yolima selecciona producto (completed)" width="1366"/>
+                <img src="72e63cba3ec57ef93c3c1d0c47ad75091f5da86f87e7f59c7af07be1ba953f83.png" title=" And selecciona el producto (completed)" width="1366"/>
+                <img src="72e63cba3ec57ef93c3c1d0c47ad75091f5da86f87e7f59c7af07be1ba953f83.png" title=" Then debe observar un mensaje de compra exitosa: <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.2.9</span>
+</div>
+</body>
+</html>

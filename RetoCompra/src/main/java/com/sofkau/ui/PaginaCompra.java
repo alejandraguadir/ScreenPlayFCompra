@@ -5,9 +5,9 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 public class PaginaCompra extends PageObject {
-    public static final Target BOTON_CATEGORIAS = Target.the("Categorias")
+    public static final Target BARRA_BUSQUEDA = Target.the("Categorias")
             .located(By.xpath("//input[@id='testId-SearchBar-Input']"));
-    public static final Target BUSCAR = Target.the("Categoria decohogar")
+    public static final Target LUPA_BUSCAR = Target.the("Categoria decohogar")
             .located(By.xpath("//*[@id=\"testId-search-wrapper\"]/div/button"));
 
     public static final Target ORDENAR_POR = Target.the("menu menor precio")
@@ -16,8 +16,6 @@ public class PaginaCompra extends PageObject {
             .located(By.xpath("//button[@id='testId-Dropdown-Precio de mayor a menor']"));
     public static final Target PRODUCTO = Target.the("producto")
             .located(By.xpath("(//li[@class='jsx-4179441773 prices-0'])[1]"));
-
-
 
     public static final Target AGREGAR_PRODUCTO = Target.the("button agregar a la bolsa")
             .located(By.xpath("(//button[normalize-space()='Agregar a la Bolsa'])[1]"));
@@ -31,6 +29,8 @@ public class PaginaCompra extends PageObject {
 
 
     public static final Target PAGO_EFECTY = Target.the("button agregar a la bolsa")
+            .located(By.xpath(" //*[@id=\"__next\"]/div/div/div[2]/div[1]/div[1]/div/div[3]/div[6]/div/div/div"));
+    public static final Target REALIZAR_PAGO = Target.the("button agregar a la bolsa")
             .located(By.xpath(" //*[@id=\"__next\"]/div/div/div[2]/div[1]/div[1]/div/div[3]/div[6]/div/div/div"));
 
 
