@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2023 10:18</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2023 15:26</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ para poder comprar productos en la página
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Compra de productos
+                                <span class="error-color">Compra de productos
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,27 +216,80 @@ para poder comprar productos en la página
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Stale element reference exception: stale element reference: element is not attached to the page document</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.StaleElementReferenceException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.sofkau.tasks.NavegarAlInicioSesion.performAs(NavegarAlInicioSesion.java:34)<br />com.sofkau.stepdefinitions.InicioSesionCompraStepDefinitions.navegaHastaLaElFormularioDeInicioDeSesion(InicioSesionCompraStepDefinitions.java:33)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource665778246214207635.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Dado que el usuario esta en la pagina de inicio" width="1366"/>
                 <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Yolima abrir pagina inicial" width="1366"/>
                 <img src="eafeaa3fb7da7e39c2f6290aacb5c03acde6480fb90e8e470f11dc51538fb87f.png" title=" Yolima opens the Pagina inicial" width="1366"/>
-                <img src="efdab8ef011c2c786c58ca44d69408c5e4ccc3363409edc5f106c521869b9b66.png" title=" Yolima opens the Pagina inicial (completed)" width="1366"/>
-                <img src="efdab8ef011c2c786c58ca44d69408c5e4ccc3363409edc5f106c521869b9b66.png" title=" Yolima abrir pagina inicial (completed)" width="1366"/>
-                <img src="efdab8ef011c2c786c58ca44d69408c5e4ccc3363409edc5f106c521869b9b66.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
-                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Cuando navega hasta la el formulario de inicio de sesion" width="1366"/>
-                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Yolima navegar al inicio sesion" width="1366"/>
-                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Yolima clicks on Boton ir al registro" width="1366"/>
-                <img src="738be474571e8c851ee703ee37cfceb5ee8d731a34892cc1a140d6048ca97193.png" title=" Yolima enters 'ayolima05@gmail.com' into input email" width="1366"/>
-                <img src="08c7da7c7552d3289ce4435794d032e2a5a8c6cbfbfd4c29db1ddff8995dcc37.png" title=" Yolima enters 'ayolima05@gmail.com' into input email (completed)" width="1366"/>
-                <img src="08c7da7c7552d3289ce4435794d032e2a5a8c6cbfbfd4c29db1ddff8995dcc37.png" title=" Yolima enters 'Contrasenia2045' into input email" width="1366"/>
-                <img src="a3c65297cbaad374c80a0b52429ce36a274e798106f7f4676162c0907dc9f10a.png" title=" Yolima enters 'Contrasenia2045' into input email (completed)" width="1366"/>
-                <img src="a3c65297cbaad374c80a0b52429ce36a274e798106f7f4676162c0907dc9f10a.png" title=" Yolima clicks on input email" width="1366"/>
-                <img src="7e27dfe42d0661ab0b35c97f6c69543c10315421475fd07adf95926f28a08c57.png" title=" Yolima clicks on input email (completed)" width="1366"/>
-                <img src="7e27dfe42d0661ab0b35c97f6c69543c10315421475fd07adf95926f28a08c57.png" title=" Yolima navegar al inicio sesion (completed)" width="1366"/>
-                <img src="7e27dfe42d0661ab0b35c97f6c69543c10315421475fd07adf95926f28a08c57.png" title=" Cuando navega hasta la el formulario de inicio de sesion (completed)" width="1366"/>
-                <img src="ace367be27a3f36d10cfe0c49c348b4c2acc82b368414c22c88ceaec8e654f45.png" title=" Y Completa los campos para el login y selecciona producto" width="1366"/>
-                <img src="ace367be27a3f36d10cfe0c49c348b4c2acc82b368414c22c88ceaec8e654f45.png" title=" Entonces el usuario debe mirar un mensaje de compra exitosa: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Yolima opens the Pagina inicial (completed)" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Yolima abrir pagina inicial (completed)" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Dado que el usuario esta en la pagina de inicio (completed)" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Cuando navega hasta la el formulario de inicio de sesion" width="1366"/>
+                <img src="cbc6d194e95bddc02f2b11ba8c1ee7fe3af5e0f25eacfb4dbb751efce3f1f880.png" title=" Yolima navegar al inicio sesion" width="1366"/>
+                <img src="778efed8eb7538abcde967fdee6a93c53600b454a0a099bf358737c2fd16e591.png" title=" Yolima clicks on Boton ir al registro" width="1366"/>
+                <img src="778efed8eb7538abcde967fdee6a93c53600b454a0a099bf358737c2fd16e591.png" title=" Yolima enters 'ayolima05@gmail.com' into input email" width="1366"/>
+                <img src="0d87b07bfcfc753a49aeb9c2c0427bc3c141a5a6761b36b209b1bb1a4c08bf4e.png" title=" Yolima enters 'ayolima05@gmail.com' into input email (completed)" width="1366"/>
+                <img src="0d87b07bfcfc753a49aeb9c2c0427bc3c141a5a6761b36b209b1bb1a4c08bf4e.png" title=" Yolima enters 'Contrasenia2045' into input email" width="1366"/>
+                <img src="8df89ca8881cee0c2e08c1f6996be4bbcca84c0aa6403ee8d640fd458db468dc.png" title=" Yolima enters 'Contrasenia2045' into input email (completed)" width="1366"/>
+                <img src="8df89ca8881cee0c2e08c1f6996be4bbcca84c0aa6403ee8d640fd458db468dc.png" title=" Yolima clicks on input email" width="1366"/>
+                <img src="8328d94673263d87c84657d7b86690018e2d8d76b5df189271ac58cb0420a1e4.png" title=" Yolima clicks on input email (completed)" width="1366"/>
+                <img src="63da19ba31db3d0eda1cd79f63c82327b06e6348410f24a5472f8b2f7afe0e31.png" title=" Yolima enters 'cuchara' into Categorias" width="1366"/>
+                <img src="b09f73e17fb815f674603e4bb0dc625698b0527ec368ac7e11889420573bb78b.png" title=" Yolima enters 'cuchara' into Categorias (completed)" width="1366"/>
+                <img src="b09f73e17fb815f674603e4bb0dc625698b0527ec368ac7e11889420573bb78b.png" title=" Yolima clicks on Categoria decohogar" width="1366"/>
+                <img src="bd54968a8659b1a05adcbbc5ca54e679ef2512a875cef4454b33ca974eaa5465.png" title=" Yolima clicks on Categoria decohogar (completed)" width="1366"/>
+                <img src="bd54968a8659b1a05adcbbc5ca54e679ef2512a875cef4454b33ca974eaa5465.png" title=" Yolima clicks on menu menor precio" width="1366"/>
+                <img src="c2c440ec45d8fc22e1dd4d899c43f574061eb561afb1bc3adb36312c8ddda824.png" title=" Yolima clicks on menu menor precio (completed)" width="1366"/>
+                <img src="c2c440ec45d8fc22e1dd4d899c43f574061eb561afb1bc3adb36312c8ddda824.png" title=" Yolima clicks on opcion menor precio" width="1366"/>
+                <img src="214b57850f3dc4150feef9b2276a308979268862934307256a6d58ce689a8d01.png" title=" Yolima clicks on opcion menor precio (completed)" width="1366"/>
+                <img src="214b57850f3dc4150feef9b2276a308979268862934307256a6d58ce689a8d01.png" title=" Yolima clicks on producto" width="1366"/>
+                <img src="6730836d2277765f02ab78a6b725ac6c26a818fe7f464a7beeeec7444299de8d.png" title=" Yolima clicks on producto (completed)" width="1366"/>
+                <img src="6730836d2277765f02ab78a6b725ac6c26a818fe7f464a7beeeec7444299de8d.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="3c8972d84de3116366029ca53e6814ca6afc6e1f503a6975074ec79a539a2f3f.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="3c8972d84de3116366029ca53e6814ca6afc6e1f503a6975074ec79a539a2f3f.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="d41d8c6fbde54cc8b442afcfa02520b194423768c84ed6adfc3d55970cbb8057.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="d41d8c6fbde54cc8b442afcfa02520b194423768c84ed6adfc3d55970cbb8057.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="91f1c852a3d931632e26c06ac00bea0674cb6de6c21c13bc36a8a47a4a000800.png" title=" Yolima clicks on button agregar a la bolsa (completed)" width="1366"/>
+                <img src="91f1c852a3d931632e26c06ac00bea0674cb6de6c21c13bc36a8a47a4a000800.png" title=" Yolima clicks on button agregar a la bolsa" width="1366"/>
+                <img src="a05c1be80b26f29c81d930ba6ea84f7a184dfe0d331ca1b1de9e5697d93e4e06.png" title=" Yolima clicks on button agregar a la bolsa (completed): <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 

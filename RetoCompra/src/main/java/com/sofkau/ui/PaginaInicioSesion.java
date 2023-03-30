@@ -12,7 +12,7 @@ public class PaginaInicioSesion extends PageObject {
     public static final Target PASS = Target.the("input email")
             .located(By.xpath("//input[@id='testId-cc-login-form-password-input']"));
     public static final Target BOTON_INGRESAR = Target.the("input email")
-            .located(By.xpath("//button[@id='testId-cc-login-form-submit']"));
+            .located(By.xpath("//*[@id=\"testId-cc-login-form-submit\"]"));
 
 
 
