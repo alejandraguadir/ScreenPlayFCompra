@@ -331,5 +331,3 @@ G.idea/sonarlint/issuestore/3/9/392aa95fb71fb907a7c70ad6971ceaa55c939290,b\0\b0
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 X
 (src/main/java/com/sofkau/util/Log4j.java,4\7\472a96b1c005db1961f98cffeeb0b10b1f2e6d10
-‰
-Ytarget/site/serenity/c8a926210aeff57f8aa7ea799262d4b730915a909cd5ecd6a705b1fa13bc7aa8.csv,8\a\8ab3344c9947975d0958ba10821907d2e0131781
