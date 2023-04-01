@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Comprar producto" skipped="0" tests="1" time="54.3" timestamp="2023-03-30 04:52:44"><testcase name="Compra de productos"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Comprar producto" skipped="0" tests="1" time="115.75" timestamp="2023-03-30 05:34:05"><testcase name="Compra de productos"><failure message="Expected enabled element was not clickable" type="java.lang.AssertionError">Expected enabled element was not clickable</failure><system-err>Expected enabled element was not clickable&#13;
+com.sofkau.tasks.SeleccionaProducto.performAs(SeleccionaProducto.java:26)&#13;
+com.sofkau.stepdefinitions.FlujoCompraStepDefinitions.seleccionaElProducto(FlujoCompraStepDefinitions.java:51)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:27)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:49)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:51)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:67)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
