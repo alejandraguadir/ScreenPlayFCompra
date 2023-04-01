@@ -3,8 +3,9 @@ package com.sofkau.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Scroll;
+
+import static com.sofkau.ui.PaginaBuscarProducto.ORDENAR_POR;
+import static com.sofkau.ui.PaginaBuscarProducto.PRECIO_MENOR;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
@@ -35,7 +36,6 @@ public class SeleccionaProducto implements Task {
                 WaitUntil.the(PRODUCTO, isCurrentlyEnabled()),
                 WaitUntil.the(PRODUCTO,isClickable()),
                 Click.on(PRODUCTO),
-
 
                 WaitUntil.the(AGREGAR_PRODUCTO, isPresent()),
                 WaitUntil.the(AGREGAR_PRODUCTO, isCurrentlyVisible()),

@@ -42,8 +42,6 @@ public class PagarProducto implements Task {
                 WaitUntil.the(PAGO_EFECTY,isClickable()),
                 Scroll.to(PAGO_EFECTY),
                 Click.on(PAGO_EFECTY)
-
-
         );
     }
 

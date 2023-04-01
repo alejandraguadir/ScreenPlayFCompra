@@ -5,27 +5,15 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 public class PaginaCompra extends PageObject {
-    public static final Target BARRA_BUSQUEDA = Target.the("Categorias")
-            .located(By.xpath("//input[@id='testId-SearchBar-Input']"));
-    public static final Target LUPA_BUSCAR = Target.the("Categoria decohogar")
-            .located(By.xpath("//*[@id=\"testId-search-wrapper\"]/div/button"));
 
-    public static final Target ORDENAR_POR = Target.the("menu menor precio")
-            .located(By.xpath("(//button[@id='testId-Dropdown-desktop-button'])[1]"));
-    public static final Target PRECIO_MENOR = Target.the("opcion los mejores evaluados")
-            .located(By.xpath("//button[@id='testId-Dropdown-Los mejores evaluados']"));
     public static final Target PRODUCTO = Target.the("producto")
             .located(By.xpath("(//li[@class='jsx-4179441773 prices-0'])[1]"));
     public static final Target AGREGAR_PRODUCTO = Target.the("button agregar a la bolsa")
             .located(By.xpath("(//button[normalize-space()='Agregar a la Bolsa'])[1]"));
-//(//button[contains(text(), 'Agregar a la bolsa')])[1]
-            //
     public static final Target VER_COMPRAS = Target.the("ver bolsa de compras")
             .located(By.xpath("(//a[normalize-space()='Ver Bolsa de Compras'])[1]"));
     public static final Target CONTINUAR_COMPRA = Target.the("button continuar compra")
             .located(By.xpath("(//button[normalize-space()='Continuar compra'])[1]"));
-
-
     public static final Target IR_PAGAR = Target.the("button ir a pagar")
             .located(By.xpath("(//button[normalize-space()='Ir a pagar'])[1]"));
 

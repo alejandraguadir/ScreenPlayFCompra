@@ -5,9 +5,6 @@ import com.sofkau.tasks.AbrirPaginaInicial;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Dado;
-import io.cucumber.java.es.Entonces;
 import org.junit.jupiter.api.Assertions;
 
 import java.io.IOException;
@@ -31,7 +28,6 @@ public class FlujoCompraStepDefinitions extends Configuracion {
     public FlujoCompraStepDefinitions() throws IOException {
     }
 
-
     @Given("el usuario esta en la pagina principal")
     public void elUsuarioEstaEnLaPaginaPrincipal() {
 
@@ -40,10 +36,10 @@ public class FlujoCompraStepDefinitions extends Configuracion {
             theActorInTheSpotlight().wasAbleTo(
                     new AbrirPaginaInicial()
             );
-            LOGGER.info("Incio de automatización");
+            LOGGER.info("Incio de automatización flujo de compra falabella");
 
         } catch (Exception e) {
-            LOGGER.info(" fallo la configuracion inicial");
+            LOGGER.info(" Fallo la configuracion inicial");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
         }
@@ -84,14 +80,14 @@ public class FlujoCompraStepDefinitions extends Configuracion {
                     seleccionaProducto()
             );
             Thread.sleep(2000);
-            LOGGER.info("selección de producto con exito");
+            LOGGER.info("Selección de producto con exito");
             theActorInTheSpotlight().attemptsTo(
                     pagarProducto()
             );
             LOGGER.info("Medio de pago seleccionado con exito");
 
         } catch (Exception e) {
-            LOGGER.info(" fallo al seleccionar el producto");
+            LOGGER.info(" Fallo al seleccionar el producto");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
         }
@@ -105,14 +101,13 @@ public class FlujoCompraStepDefinitions extends Configuracion {
                     seeThat(mensajeCompra(), equalTo("Para finalizar la compra, dir\u00EDgete a una sucursal Efecty con el c\u00F3digo de pago que recibir\u00E1s en el siguiente paso y realiza el pago para evitar el retraso o la cancelaci\u00F3n de tu orden."))
             );
 
-            LOGGER.info("Pago realizado con exito ");
+            LOGGER.info("Prueba realizada con exito ");
 
         } catch (Exception e) {
-            LOGGER.info(" fallo al realizar el pago");
+            LOGGER.info(" Fallo al realizar la assercion");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
         }
-
 
 
     }

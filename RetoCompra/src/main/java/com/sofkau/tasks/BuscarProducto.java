@@ -7,7 +7,8 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static com.sofkau.ui.PaginaCompra.*;
+import static com.sofkau.ui.PaginaBuscarProducto.BARRA_BUSQUEDA;
+import static com.sofkau.ui.PaginaBuscarProducto.LUPA_BUSCAR;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 
 
@@ -30,8 +31,6 @@ public class BuscarProducto implements Task {
                 Scroll.to(BARRA_BUSQUEDA),
                 Enter.theValue(producto).into(BARRA_BUSQUEDA),
                 Click.on(LUPA_BUSCAR)
-
-
         );
     }
 

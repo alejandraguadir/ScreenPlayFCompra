@@ -329,12 +329,6 @@ G.idea/sonarlint/issuestore/3/9/392aa95fb71fb907a7c70ad6971ceaa55c939290,b\0\b0
 .gitignore.txt,2\f\2fec9aef0e3f00490b19ac15f648af576a3dcd0e
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-_
-/src/main/java/com/sofkau/util/SetVariables.java,8\e\8e3313a72c8bb89e79f27a99dee30d56ed221ae9
-i
-9src/main/java/com/sofkau/tasks/NavegarAlInicioSesion.java,c\a\cabc7166bb5e8babaa735b4f1ff4d1a7004171bb
-^
-.src/main/java/com/sofkau/ui/PaginaInicial.java,d\d\ddae7dce96e17c48e910ccf95c7e64fa789b4fa5
 X
 (src/main/java/com/sofkau/util/Log4j.java,4\7\472a96b1c005db1961f98cffeeb0b10b1f2e6d10
 ‰
