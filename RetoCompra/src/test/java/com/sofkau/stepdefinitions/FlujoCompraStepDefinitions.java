@@ -8,17 +8,24 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import org.junit.jupiter.api.Assertions;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Logger;
 
+import static com.sofkau.questions.MensajeCompra.mensajeCompra;
+import static com.sofkau.tasks.BuscarProducto.buscarProducto;
 import static com.sofkau.tasks.NavegarAlInicioSesion.navegarAlInicioSesion;
+import static com.sofkau.tasks.PagarProducto.pagarProducto;
 import static com.sofkau.tasks.SeleccionaProducto.seleccionaProducto;
 import static com.sofkau.util.SetVariables.getUserPasword;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 public class FlujoCompraStepDefinitions extends Configuracion {
-
+    private static final Logger LOGGER = Logger.getLogger(String.valueOf(FlujoCompraStepDefinitions.class));
     private List<String> credenciales = getUserPasword();
 
     public FlujoCompraStepDefinitions() throws IOException {
@@ -26,36 +33,87 @@ public class FlujoCompraStepDefinitions extends Configuracion {
 
 
     @Given("el usuario esta en la pagina principal")
-    public void elUsuarioEstaEnLaPaginaPrincipal() throws InterruptedException {
-        configurarNavegador();
-        theActorInTheSpotlight().wasAbleTo(
-                new AbrirPaginaInicial()
+    public void elUsuarioEstaEnLaPaginaPrincipal() {
 
-        );
+        try {
+            configurarNavegador();
+            theActorInTheSpotlight().wasAbleTo(
+                    new AbrirPaginaInicial()
+            );
+            LOGGER.info("Incio de automatización");
+
+        } catch (Exception e) {
+            LOGGER.info(" fallo la configuracion inicial");
+            LOGGER.warning(e.getMessage());
+            Assertions.fail();
+        }
 
     }
 
     @When("navega hasta la opcion de incio de sesion")
-    public void navegaHastaLaOpcionDeIncioDeSesion() throws InterruptedException {
-        theActorInTheSpotlight().attemptsTo(
-                navegarAlInicioSesion()
-                        .conElUsuario(credenciales.get(0))
-                        .yConLaContrasenna(credenciales.get(1))
+    public void navegaHastaLaOpcionDeIncioDeSesion() {
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    navegarAlInicioSesion()
+                            .conElUsuario(credenciales.get(0))
+                            .yConLaContrasenna(credenciales.get(1))
+            );
 
-        );
+            LOGGER.info("Incio de sesión correcto");
+
+        } catch (Exception e) {
+            LOGGER.info(" fallo al iniciar sesión");
+            LOGGER.warning(e.getMessage());
+            Assertions.fail();
+        }
+
 
     }
 
     @When("selecciona el producto")
     public void seleccionaElProducto() {
-        theActorInTheSpotlight().attemptsTo(
-                seleccionaProducto()
-                        .yProducto("cuchara")
-        );
+
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    buscarProducto()
+                            .yProducto("reloj")
+            );
+            Thread.sleep(2000);
+            LOGGER.info("Busqueda exitosa");
+            theActorInTheSpotlight().attemptsTo(
+                    seleccionaProducto()
+            );
+            Thread.sleep(2000);
+            LOGGER.info("selección de producto con exito");
+            theActorInTheSpotlight().attemptsTo(
+                    pagarProducto()
+            );
+            LOGGER.info("Medio de pago seleccionado con exito");
+
+        } catch (Exception e) {
+            LOGGER.info(" fallo al seleccionar el producto");
+            LOGGER.warning(e.getMessage());
+            Assertions.fail();
+        }
+
     }
 
     @Then("debe observar un mensaje de compra exitosa")
     public void debeObservarUnMensajeDeCompraExitosa() {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(mensajeCompra(), equalTo("Para finalizar la compra, dir\u00EDgete a una sucursal Efecty con el c\u00F3digo de pago que recibir\u00E1s en el siguiente paso y realiza el pago para evitar el retraso o la cancelaci\u00F3n de tu orden."))
+            );
+
+            LOGGER.info("Pago realizado con exito ");
+
+        } catch (Exception e) {
+            LOGGER.info(" fallo al realizar el pago");
+            LOGGER.warning(e.getMessage());
+            Assertions.fail();
+        }
+
+
 
     }
 

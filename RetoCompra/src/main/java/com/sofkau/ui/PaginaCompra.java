@@ -12,26 +12,36 @@ public class PaginaCompra extends PageObject {
 
     public static final Target ORDENAR_POR = Target.the("menu menor precio")
             .located(By.xpath("(//button[@id='testId-Dropdown-desktop-button'])[1]"));
-    public static final Target PRECIO_MENOR = Target.the("opcion menor precio")
-            .located(By.xpath("//button[@id='testId-Dropdown-Precio de mayor a menor']"));
+    public static final Target PRECIO_MENOR = Target.the("opcion los mejores evaluados")
+            .located(By.xpath("//button[@id='testId-Dropdown-Los mejores evaluados']"));
     public static final Target PRODUCTO = Target.the("producto")
             .located(By.xpath("(//li[@class='jsx-4179441773 prices-0'])[1]"));
-
     public static final Target AGREGAR_PRODUCTO = Target.the("button agregar a la bolsa")
             .located(By.xpath("(//button[normalize-space()='Agregar a la Bolsa'])[1]"));
-    public static final Target VER_COMPRAS = Target.the("button agregar a la bolsa")
-            .located(By.xpath("//*[@id=\"__next\"]/div/div/div/div/div/div/div[3]/div[2]/div"));
+//(//button[contains(text(), 'Agregar a la bolsa')])[1]
+            //
+    public static final Target VER_COMPRAS = Target.the("ver bolsa de compras")
+            .located(By.xpath("(//a[normalize-space()='Ver Bolsa de Compras'])[1]"));
+    public static final Target CONTINUAR_COMPRA = Target.the("button continuar compra")
+            .located(By.xpath("(//button[normalize-space()='Continuar compra'])[1]"));
 
-    public static final Target CONTINUAR_COMPRA = Target.the("button agregar a la bolsa")
-            .located(By.xpath("//*[@id=\"order-cell\"]/div[2]/div/button"));
-    public static final Target IR_PAGAR = Target.the("button agregar a la bolsa")
-            .located(By.xpath("//*[@id=\"testId-ContinueShopping-enabled\"]\n"));
+
+    public static final Target IR_PAGAR = Target.the("button ir a pagar")
+            .located(By.xpath("(//button[normalize-space()='Ir a pagar'])[1]"));
 
 
-    public static final Target PAGO_EFECTY = Target.the("button agregar a la bolsa")
-            .located(By.xpath(" //*[@id=\"__next\"]/div/div/div[2]/div[1]/div[1]/div/div[3]/div[6]/div/div/div"));
-    public static final Target REALIZAR_PAGO = Target.the("button agregar a la bolsa")
-            .located(By.xpath(" //*[@id=\"__next\"]/div/div/div[2]/div[1]/div[1]/div/div[3]/div[6]/div/div/div"));
+
+
+
+
+    public static final Target PAGO_EFECTY = Target.the("button pago efecty")
+            .located(By.xpath("//*[@id=\"__next\"]/div/div/div[2]/div[1]/div[1]/div/div[3]/div[6]/div/div/div"));
+
+
+    public static final Target REALIZAR_PAGO = Target.the("button reservar pago")
+            .located(By.xpath("/html/body/div[1]/div/div/div[2]/div[2]/div[2]/div/div[4]/button"));
+
+
 
 
 }
