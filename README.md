@@ -14,7 +14,7 @@ Esta prueba automatizada utiliza el patrón de automatización Screenplay junto 
 3.	Chrome o Firefox instalado en la máquina local
 4. 	Entorno de desarrollo preferiblemente Intellij IDEA
 ### Configuración
-Antes de ejecutar la prueba automatizada, es necesario agregar usuario y contraseña de registro asociado al comercio electrónico en el artchivo files.
+Antes de ejecutar la prueba automatizada, es necesario agregar usuario y contraseña de registro asociado al comercio electrónico en el archivo files.properties
 ### Ejecución
 Para ejecutar la prueba automatizada, sigue los siguientes pasos:
 Abre el proyecto y ejecuta el runner/compraTest
