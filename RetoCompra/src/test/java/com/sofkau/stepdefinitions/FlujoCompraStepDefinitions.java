@@ -13,8 +13,8 @@ import java.util.logging.Logger;
 
 import static com.sofkau.questions.MensajeCompra.mensajeCompra;
 import static com.sofkau.tasks.BuscarProducto.buscarProducto;
+import static com.sofkau.tasks.MetododePago.metododePago;
 import static com.sofkau.tasks.NavegarAlInicioSesion.navegarAlInicioSesion;
-import static com.sofkau.tasks.PagarProducto.pagarProducto;
 import static com.sofkau.tasks.SeleccionaProducto.seleccionaProducto;
 import static com.sofkau.util.SetVariables.getUserPasword;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -42,6 +42,7 @@ public class FlujoCompraStepDefinitions extends Configuracion {
             LOGGER.info(" Fallo la configuracion inicial");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
     }
@@ -61,6 +62,7 @@ public class FlujoCompraStepDefinitions extends Configuracion {
             LOGGER.info(" fallo al iniciar sesión");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
 
@@ -82,14 +84,18 @@ public class FlujoCompraStepDefinitions extends Configuracion {
 
             LOGGER.info("Selección de producto con exito");
             theActorInTheSpotlight().attemptsTo(
-                    pagarProducto()
+                    metododePago()
             );
+
             LOGGER.info("Medio de pago seleccionado con exito");
+
+
 
         } catch (Exception e) {
             LOGGER.info(" Fallo al seleccionar el producto");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
     }
@@ -107,6 +113,7 @@ public class FlujoCompraStepDefinitions extends Configuracion {
             LOGGER.info(" Fallo al realizar la assercion");
             LOGGER.warning(e.getMessage());
             Assertions.fail();
+            quitarDriver();
         }
 
 

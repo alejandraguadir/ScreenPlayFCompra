@@ -147,8 +147,6 @@ G.idea/sonarlint/issuestore/3/9/392aa95fb71fb907a7c70ad6971ceaa55c939290,b\0\b0
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 X
 (src/main/java/com/sofkau/util/Log4j.java,4\7\472a96b1c005db1961f98cffeeb0b10b1f2e6d10
-_
-/src/main/java/com/sofkau/util/SetVariables.java,8\e\8e3313a72c8bb89e79f27a99dee30d56ed221ae9
 w
 G.idea/sonarlint/issuestore/b/f/bf2141995a9eb5374e37067faf9914d83c172585,a\4\a47564a217ae1e3bb5fba80f132053cc2a9f9ef8
 w
@@ -313,5 +311,3 @@ Ztarget/site/serenity/a0ace456df350117335ad374e8d62c0d8c978db868ea1469e0c5ba32aa
 Ztarget/site/serenity/da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html,6\f\6f68c3e6db28e76285d44a15e3303b560794ac2b
 Š
 Ztarget/site/serenity/5dc2ab949914ea069aeeda1f2dda73d0c5fdb6dc077982712627628033736c61.html,c\d\cd427df13f040007ad4d99e87b408744c85f8b5c
-a
-1src/test/java/com/sofkau/setup/Configuracion.java,c\b\cbe6a224637677b5ca48e71d2bf6b058ef857918

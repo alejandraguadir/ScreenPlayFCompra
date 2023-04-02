@@ -1,70 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Comprar producto" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-02T00:45:35" hostname="DESKTOP-4V0UC4E" time="102.74">
+<testsuite name="Comprar producto" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-02T03:23:10" hostname="DESKTOP-4V0UC4E" time="69.312">
   <properties/>
-  <testcase name="Compra de productos" classname="Comprar producto" time="102.74">
-    <failure message="java.lang.AssertionError: &#10;Expected: an element that is currently enabled&#10;     but: the element identified by xpath: (//button[normalize-space()='Ir a pagar'])[1] [Ir a pagar] was not enabled" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: an element that is currently enabled
-     but: the element identified by xpath: (//button[normalize-space()='Ir a pagar'])[1] [Ir a pagar] was not enabled
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady.performAs(WaitUntilTargetIsReady.java:27)
-	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$pvEKpfNu.performAs$accessor$jhbnUK8z(Unknown Source)
-	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
-	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:385)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$pvEKpfNu.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:209)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at com.sofkau.tasks.PagarProducto.performAs(PagarProducto.java:20)
-	at com.sofkau.tasks.PagarProducto$ByteBuddy$kpBwl150.performAs$accessor$rqd3E26U(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.sofkau.tasks.PagarProducto$ByteBuddy$kpBwl150.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
-	at com.sofkau.stepdefinitions.FlujoCompraStepDefinitions.seleccionaElProducto(FlujoCompraStepDefinitions.java:84)
-	at ✽.selecciona el producto(file:///D:/10.%20SOFKAU/RetoScreenplay/RetoCompra/src/test/resources/features/compra.feature:9)
-</failure>
-  </testcase>
+  <testcase name="Compra de productos" classname="Comprar producto" time="69.312"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 56634
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 56642
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 01, 2023 7:45:39 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 01, 2023 10:23:13 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 01, 2023 7:45:40 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+abr. 01, 2023 10:23:13 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 58069
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 48048
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 01, 2023 7:45:44 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 01, 2023 10:23:16 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 01, 2023 7:46:06 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions elUsuarioEstaEnLaPaginaPrincipal
+abr. 01, 2023 10:23:23 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions elUsuarioEstaEnLaPaginaPrincipal
 INFO: Incio de automatizaciÃ³n flujo de compra falabella
-abr. 01, 2023 7:46:27 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions navegaHastaLaOpcionDeIncioDeSesion
+abr. 01, 2023 10:23:30 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions navegaHastaLaOpcionDeIncioDeSesion
 INFO: Incio de sesiÃ³n correcto
-abr. 01, 2023 7:46:38 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
+abr. 01, 2023 10:23:40 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
 INFO: Busqueda exitosa
-abr. 01, 2023 7:46:57 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
+abr. 01, 2023 10:23:58 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
 INFO: SelecciÃ³n de producto con exito
+abr. 01, 2023 10:24:18 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
+INFO: Medio de pago seleccionado con exito
+abr. 01, 2023 10:24:19 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions debeObservarUnMensajeDeCompraExitosa
+INFO: Prueba realizada con exito 
 ]]></system-err>
 </testsuite>

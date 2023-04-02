@@ -5,8 +5,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-
-import static com.sofkau.ui.PaginaBuscarProducto.ORDENAR_POR;
 import static com.sofkau.ui.PaginaInicioSesion.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;

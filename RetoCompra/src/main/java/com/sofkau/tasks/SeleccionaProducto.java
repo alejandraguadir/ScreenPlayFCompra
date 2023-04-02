@@ -9,7 +9,7 @@ import static com.sofkau.ui.PaginaBuscarProducto.PRECIO_MENOR;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static com.sofkau.ui.PaginaCompra.*;
+import static com.sofkau.ui.PaginaMetododePago.*;
 
 
 
