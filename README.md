@@ -16,9 +16,9 @@ Esta prueba automatizada utiliza el patrón de automatización Screenplay junto 
 4. 	Entorno de desarrollo preferiblemente Intellij IDEA
 ### Configuración
 Antes de ejecutar la prueba automatizada, es necesario agregar usuario y contraseña de registro asociado al comercio electrónico en el artchivo files.
-###Ejecución
+### Ejecución
 Para ejecutar la prueba automatizada, sigue los siguientes pasos:
 Abre el proyecto y ejecuta el runner/compraTest
-###Resultados
+### Resultados
 Los resultados de la prueba automatizada se generarán en la carpeta target/site/serenity/. Abre el archivo index.html en un navegador.
 
