@@ -1,75 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Comprar producto" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-01T23:03:48" hostname="DESKTOP-4V0UC4E" time="57.498">
+<testsuite name="Comprar producto" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-02T00:07:42" hostname="DESKTOP-4V0UC4E" time="183.73">
   <properties/>
-  <testcase name="Compra de productos" classname="Comprar producto" time="57.498">
-    <failure message="java.lang.AssertionError: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=111.0.5563.147)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-4V0UC4E', ip: '192.168.80.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\YOLIMA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: daa7fbedd02bdd90fceaf444f4a1528c" type="java.lang.AssertionError">java.lang.AssertionError: stale element reference: element is not attached to the page document
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-4V0UC4E', ip: '192.168.80.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\YOLIMA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: daa7fbedd02bdd90fceaf444f4a1528c
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady.performAs(WaitUntilTargetIsReady.java:27)
-	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$VP7AUcCE.performAs$accessor$h6AulwBg(Unknown Source)
-	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
-	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:385)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady$ByteBuddy$VP7AUcCE.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
-	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:209)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at com.sofkau.tasks.PagarProducto.performAs(PagarProducto.java:20)
-	at com.sofkau.tasks.PagarProducto$ByteBuddy$9mcHb3eQ.performAs$accessor$OPiCl8IQ(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.sofkau.tasks.PagarProducto$ByteBuddy$9mcHb3eQ.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
-	at com.sofkau.stepdefinitions.FlujoCompraStepDefinitions.seleccionaElProducto(FlujoCompraStepDefinitions.java:84)
-	at ✽.selecciona el producto(file:///D:/10.%20SOFKAU/RetoScreenplay/RetoCompra/src/test/resources/features/compra.feature:9)
-</failure>
-  </testcase>
+  <testcase name="Compra de productos" classname="Comprar producto" time="183.73"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 31793
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 10407
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 01, 2023 6:03:50 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 01, 2023 7:07:47 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 01, 2023 6:03:51 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+abr. 01, 2023 7:07:48 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 35427
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 13644
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 01, 2023 6:03:53 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 01, 2023 7:07:58 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 01, 2023 6:04:00 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions elUsuarioEstaEnLaPaginaPrincipal
+abr. 01, 2023 7:08:21 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions elUsuarioEstaEnLaPaginaPrincipal
 INFO: Incio de automatizaciÃ³n flujo de compra falabella
-abr. 01, 2023 6:04:05 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions navegaHastaLaOpcionDeIncioDeSesion
+abr. 01, 2023 7:08:33 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions navegaHastaLaOpcionDeIncioDeSesion
 INFO: Incio de sesiÃ³n correcto
-abr. 01, 2023 6:04:20 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
+abr. 01, 2023 7:08:58 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
 INFO: Busqueda exitosa
-abr. 01, 2023 6:04:36 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
+abr. 01, 2023 7:09:35 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
 INFO: SelecciÃ³n de producto con exito
+abr. 01, 2023 7:10:36 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions seleccionaElProducto
+INFO: Medio de pago seleccionado con exito
+abr. 01, 2023 7:10:44 P. M. com.sofkau.stepdefinitions.FlujoCompraStepDefinitions debeObservarUnMensajeDeCompraExitosa
+INFO: Prueba realizada con exito 
 ]]></system-err>
 </testsuite>

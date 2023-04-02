@@ -74,12 +74,12 @@ public class FlujoCompraStepDefinitions extends Configuracion {
                     buscarProducto()
                             .yProducto("reloj")
             );
-            Thread.sleep(2000);
+
             LOGGER.info("Busqueda exitosa");
             theActorInTheSpotlight().attemptsTo(
                     seleccionaProducto()
             );
-            Thread.sleep(2000);
+
             LOGGER.info("Selección de producto con exito");
             theActorInTheSpotlight().attemptsTo(
                     pagarProducto()
