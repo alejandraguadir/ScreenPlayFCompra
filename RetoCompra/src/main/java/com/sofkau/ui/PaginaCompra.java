@@ -16,19 +16,8 @@ public class PaginaCompra extends PageObject {
             .located(By.xpath("(//button[normalize-space()='Continuar compra'])[1]"));
     public static final Target IR_PAGAR = Target.the("button ir a pagar")
             .located(By.xpath("(//button[normalize-space()='Ir a pagar'])[1]"));
-
-
-
-
-
-
     public static final Target PAGO_EFECTY = Target.the("button pago efecty")
             .located(By.xpath("//*[@id=\"__next\"]/div/div/div[2]/div[1]/div[1]/div/div[3]/div[6]/div/div/div"));
-
-
-    public static final Target REALIZAR_PAGO = Target.the("button reservar pago")
-            .located(By.xpath("/html/body/div[1]/div/div/div[2]/div[2]/div[2]/div/div[4]/button"));
-
 
 
 

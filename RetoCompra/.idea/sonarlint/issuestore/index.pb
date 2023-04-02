@@ -315,9 +315,3 @@ Ztarget/site/serenity/da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f
 Ztarget/site/serenity/5dc2ab949914ea069aeeda1f2dda73d0c5fdb6dc077982712627628033736c61.html,c\d\cd427df13f040007ad4d99e87b408744c85f8b5c
 a
 1src/test/java/com/sofkau/setup/Configuracion.java,c\b\cbe6a224637677b5ca48e71d2bf6b058ef857918
-c
-3src/main/java/com/sofkau/ui/PaginaInicioSesion.java,b\d\bd25d75ebd0892b5698e0c874a93c4a0d2b4ef6c
-f
-6src/main/java/com/sofkau/tasks/SeleccionaProducto.java,7\7\77e668054e07d056d3a65cc1b670ab4cae32783a
-b
-2src/main/java/com/sofkau/tasks/BuscarProducto.java,1\4\14e90da3cf0618ba59e6c201b29ae9099022f485
